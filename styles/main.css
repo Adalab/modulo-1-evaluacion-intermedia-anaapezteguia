@@ -12,8 +12,6 @@ body {
   margin-top: 10px;
   text-align: center;
 }
-.logo {
-}
 .menu {
   display: flex;
   flex-wrap: nowrap;
@@ -35,7 +33,7 @@ body {
   height: 100vh;
   background-color: #3cdbc0;
 }
-.slogan {
+.slogan h2 {
   color: #ffffff;
   font-size: 30px;
 }
@@ -43,11 +41,25 @@ body {
   display: block;
   text-align: center;
 }
-/*
+
 @media all and (min-width: 768px) {
   .header {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px;
+  }
+  .menu {
+    padding: 0;
+  }
+  .menu-item {
+    padding: 0;
+  }
+  .first {
+    padding-right: 20px;
+  }
+  .slogan h2 {
+    font-size: 40px;
   }
 }
-*/
