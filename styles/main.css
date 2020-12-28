@@ -2,26 +2,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
   list-style-type: none;
 }
 
 .header {
-  margin-top: 10px;
-  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0 3px 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .menu {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  text-transform: uppercase;
-  padding: 10px 0 13px;
+  padding: 0;
 }
+
 .menu-item {
-  padding: 0 10px;
+  display: inline-block;
 }
-.menu a {
+.menu-link {
   color: #4a4a4a;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
 }
 .menu a:visited {
   color: #05635a;
@@ -52,20 +59,12 @@
 
 @media all and (min-width: 768px) {
   .header {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin: 20px 30px;
+    padding: 20px 20px 20px 30px;
   }
-  .menu,
-  .menu-item {
-    padding: 0;
-  }
-  .first {
-    padding-right: 20px;
-  }
-  .slogan-item {
+
+  .slogan {
     font-size: 40px;
   }
 }
